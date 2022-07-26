@@ -1,5 +1,7 @@
 # Landing Page
 
+## Project description
+
 Landing Page is an experimental page to show different sections in an interesting manner.
 
 ## Installation
@@ -17,3 +19,13 @@ creating list via javascript and attach it directly to the navbar unorderedlist 
 
 Activivate style according to viewport
 adding a scrolling event listener to the window to check out the viewport and accordinly add or remove the styling for the activated section viewport and navigation bar list, for smooth scrolling transmission, refer to html tag in CSS.
+
+## Technologies Used
+
+HTML5, CSS, and Vanilla JavaScript.
+
+## Author's Name
+
+Ayman Dahab
+
+## Credits
