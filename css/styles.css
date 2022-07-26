@@ -7,9 +7,6 @@
  * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
  *
 */
-html {
-    scroll-behavior: smooth;
-}
 
 .active {
     background: rgba(83, 82, 82, 0.445);
