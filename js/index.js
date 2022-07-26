@@ -40,7 +40,7 @@ Scroll to section on link click
 
 // Add class 'active' to section when near top of viewport
 window.addEventListener("scroll", function (e){
-  e.preventDefault(); 
+  e.preventDefault();
   sections.forEach( function(section) {
     // Get the distance from top of section
     const topOfSectionDistance = section.getBoundingClientRect().top;
@@ -66,29 +66,11 @@ window.addEventListener("scroll", function (e){
 });
 
 
-
-
-// I TIRED TO CREATE NEW SECTION AND IT DID CREATE ONE BUT THE NAV BAR GOT TROUBLES I COULDN'T FIX IT
 /*
-// Selection of page header
-const pageHeader = document.querySelector(".page__header");
-
-let sectionNumber = 5;
-const newBtn = document.createElement("button");
-newBtn.innerHTML = "Add New Section";
-pageHeader.insertAdjacentElement("beforeend", newBtn);
-
-newBtn.addEventListener("click", function() {
-  const sectionContent = `
-    <section id="section${sectionNumber}" data-nav="Section ${sectionNumber}">
-      <div class="landing__container">
-        <h2>Section ${sectionNumber}</h2>
-        <p>Hello That's the new Sction</p>
-        <p>I will update content later</p>
-      </div>
-    </section>`;
-document.querySelector("main").insertAdjacentHTML("beforeend", sectionContent);
-sectionNumber++;
-createNewAnchorListFuncation();
-});
+Smooth Scroll over navigation bar click.
 */
+
+navBarList.addEventListener("click", function(e){
+  e.preventDefault();
+  document.getElementById(`${e.target.hash.substring(1)}`).scrollIntoView({behavior: "smooth"});
+});
